@@ -1,6 +1,9 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:21-jdk
+
 WORKDIR /app
+
 COPY EcoMindApp.java .
-COPY ecomind_data.txt .
-RUN javac EcoMindApp.java
-CMD ["java", "EcoMindApp"]
+
+RUN javac -d . EcoMindApp.java
+
+CMD ["java", "EcoMind.EcoMindApp"]
