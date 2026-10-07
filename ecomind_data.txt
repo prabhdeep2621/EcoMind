@@ -1,0 +1,3 @@
+plantGrowth=10
+daysNurtured=1
+lastInteraction=2026-10-05
